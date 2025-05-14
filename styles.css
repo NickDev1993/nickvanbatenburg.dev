@@ -1,0 +1,81 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(-45deg, #ff9a9e, #fad0c4, #fbc2eb, #a18cd1);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+/* Keyframe Animation */
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    margin-top: -50px;
+}
+
+.hero h1 {
+    color: #333;
+    font-weight: 700;
+    transition: color 0.3s ease;
+}
+
+.hero h1:hover {
+    color: #0077b5;
+}
+
+.hero p {
+    color: #555;
+    font-size: 1.2em;
+}
+
+.hero .cta {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #0077b5;
+    color: #fff;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-size: 1em;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    text-decoration: none;
+}
+
+.hero .cta:hover {
+    background-color: #005580;
+}
+
+/* Dark Mode */
+.dark-mode {
+    background-color: #1a1a1a;
+    color: #ccc;
+}
+
+.dark-mode a {
+    color: #4da6ff;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .hero h1 {
+        font-size: 1.5em;
+    }
+
+    .hero .cta {
+        font-size: 1em;
+    }
+}
